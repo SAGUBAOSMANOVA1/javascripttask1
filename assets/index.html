@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./index.js" defer></script>
+
+
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./index.js">
+
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary class=" navbar bg-dark border-bottom border-body data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./netflix.logo.png" alt="Logo" width="60" height="44"
+          class="d-inline-block align-text-top rounded-3 ">
+        Netflix Movies
+      </a>
+      <ul class="nav justify-content-center">
+        <li class="nav-item p-2 g-col-6">
+          <a class="nav-link active button-85" aria-current="page" href="#">Movies</a>
+        </li>
+        <li class="nav-item p-2 g-col-6 ">
+          <a class="nav-link button-85" href="#">Cartoons</a>
+        </li>
+
+        <li class="nav-item p-2 g-col-6 ">
+          <a class="nav-link button-85" href="#">My List</a>
+        </li>
+        <li class="nav-item p-2 g-col-6  ">
+          <a class="nav-link disabled button-86" aria-disabled="true">Recently Added</a>
+        </li>
+      </ul>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn button-85" type="submit" onclick="searchFilm()">Search</button>
+            <div id="result"></div>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </nav>
+
+
+  <div class="container mt-5">
+    <div class="row">
+
+      <!-- Card 1 -->
+      <div class="col-md-3">
+        <div class="card ">
+          <img src="./movie.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body ">
+            <div class="netflix">
+              <h4 class="filmTitle">Title: "La Casa De Papel"</h4>
+              <h5>Year: "2017-2021"</h5>
+              <h6>imdbID: "tt1490017"</h6>
+              <h6>Type: "movie"</h6>
+            </div>
+            <button type="button " class="btn button-85">Watch</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./movies2.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <div class="netflix">
+              <h4 class="filmTitle">Title: "Uncharted"</h4>
+              <h5>Year: "2022"</h5>
+              <h6>imdbID: "tt0462538"</h6>
+              <h6>Type: "movie"</h6>
+            </div>
+            <button type="button " class="btn button-85">Watch</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./cartoon1.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <div class="netflix">
+              <h4 class="filmTitle">Title: "Scooby Doo"</h4>
+              <h5>Year: "2010-2013"</h5>
+              <h6>imdbID: "tt9243946"</h6>
+              <h6>Type: "cartoons"</h6>
+            </div>
+            <button type="button " class="btn button-85">Watch</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4-->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./cartoon2.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <div class="netflix">
+              <h4 class="filmTitle">Title: "Grinch"</h4>
+              <h5>Year: "2018"</h5>
+              <h6>imdbID: "tt0175142"</h6>
+              <h6>Type: "cartoons"</h6>
+            </div>
+            <button type="button " class="btn button-85">Watch</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container mt-5">
+    <div class="row">
+
+      <!-- Card 5 -->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./movies3.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <div class="netflix">
+              <h4 class="filmTitle">Title: "The Queen Gambit"</h4>
+              <h5>Year: "2020"</h5>
+              <h6>imdbID: "tt6718170"</h6>
+              <h6>Type: "movie"</h6>
+            </div>
+            <button type="button " class="btn button-85">Watch</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./movies4.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <div class="netflix">
+              <h4 class="filmTitle">Title: "Berlin"</h4>
+              <h5>Year: "2023"</h5>
+              <h6>imdbID: "tt0389790"</h6>
+              <h6>Type: "movie"</h6>
+            </div>
+            <button type="button " class="btn button-85">Watch</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="movies5.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <div class="netflix">
+              <h4 class="filmTitle">Title: "Extraction1"</h4>
+              <h5>Year: "2020"</h5>
+              <h6>imdbID: "tt0257106"</h6>
+              <h6>Type: "movie"</h6>
+            </div>
+            <button type="button " class="btn button-85">Watch</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="movies6.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <div class="netflix">
+              <h4 class="filmTitle">Title: "Extraction2"</h4>
+              <h5>Year: "2023"</h5>
+              <h6>imdbID: "tt4116284"</h6>
+              <h6>Type: "movie"</h6>
+            </div>
+            <button type="button " class="btn button-85">Watch</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
